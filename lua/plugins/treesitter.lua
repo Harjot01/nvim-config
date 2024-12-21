@@ -4,8 +4,8 @@ return {
 	config = function()
 		local config = require("nvim-treesitter.configs")
 		config.setup({
-      auto_install = true,
-			highlight = { enable = true },
+			auto_install = true,
+			highlight = { enable = true, disable = { "cpp" } },
 			indent = { enable = true },
 		})
 	end,
