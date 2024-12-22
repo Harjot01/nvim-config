@@ -10,6 +10,7 @@ return {
         null_ls.builtins.diagnostics.erb_lint,
         null_ls.builtins.formatting.rubocop,
         null_ls.builtins.formatting.clang_format,
+        null_ls.builtins.formatting.black,
       },
     })
 
