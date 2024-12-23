@@ -39,5 +39,6 @@ return {
     end, { noremap = true, silent = true })
     -- Switch from terminal mode to normal mode
     vim.api.nvim_set_keymap("t", "<Esc>", [[<C-\><C-n>]], { noremap = true, silent = true })
+    vim.api.nvim_set_keymap("t", "<C-[>", [[<C-\><C-n>]], { noremap = true, silent = true })
   end,
 }
