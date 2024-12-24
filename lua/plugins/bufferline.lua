@@ -32,7 +32,7 @@ return {
       vim.keymap.set("n", "<Tab>", ":BufferLineCycleNext<CR>", { noremap = true, silent = true })
       vim.keymap.set("n", "<S-Tab>", ":BufferLineCyclePrev<CR>", { noremap = true, silent = true })
 
-      vim.keymap.set("n", "<C-w>", ":BufDel<CR>", { noremap = true, silent = true })
+      vim.keymap.set("n", "<leader>w", ":BufDel<CR>", { noremap = true, silent = true })
 
       require("bufdel").setup({
         next = "cycle",
