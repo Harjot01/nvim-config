@@ -5,6 +5,13 @@ local opts = { noremap = true, silent = true }
 -- Save the file
 vim.keymap.set("n", "<C-s>", "<cmd> w <CR>", opts)
 
+-- Copy entire text to clipboard
+vim.api.nvim_set_keymap('n', '<leader>y', ':%y+<CR>', { noremap = true, silent = true })
+
+-- Copy selected text to clipboard
+vim.api.nvim_set_keymap('v', '<leader>v', '"+y', { noremap = true, silent = true })
+
+
 -- Window management
 vim.keymap.set("n", "<leader>sv", "<C-w>v", opts) -- split window vertically
 vim.keymap.set("n", "<leader>sh", "<C-w>s", opts) -- split window horizontally
